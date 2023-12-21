@@ -33,8 +33,8 @@ export default function Header(props) {
     }
 
     const analyzeText = (event) => {
-        const newText=event.target.value;
-        const paragraphs = newText.split('\n');
+        const newText=event.target.value; // give permission for adding content
+        const paragraphs = newText.split('\n'); // paragraphs will be count according to new text
        
         const words = newText.trim().split(/\s+/);
         const newWordCount = words.length;
